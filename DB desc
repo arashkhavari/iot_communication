@@ -1,0 +1,32 @@
+
+mysql -u root -p 
+'type password'
+
+show databases;
+use t2m;
+show tables;
+desc parsing;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| service     | varchar(20) | YES  |     | NULL    |       |
+| length      | int(11)     | YES  |     | NULL    |       |
+| unit        | int(11)     | YES  |     | NULL    |       |
+| adate       | varchar(20) | YES  |     | NULL    |       |
+| lat         | varchar(20) | YES  |     | NULL    |       |
+| lon         | varchar(20) | YES  |     | NULL    |       |
+| speed       | varchar(20) | YES  |     | NULL    |       |
+| currentTime | varchar(20) | YES  |     | NULL    |       |
+| IP          | varchar(20) | YES  |     | NULL    |       |
+| astatus     | varchar(20) | YES  |     | NULL    |       |
+| carrier     | varchar(10) | YES  |     | NULL    |       |
+| param2      | varchar(20) | YES  |     | NULL    |       |
+| param3      | varchar(20) | YES  |     | NULL    |       |
+| param5      | varchar(20) | YES  |     | NULL    |       |
+| param6      | varchar(20) | YES  |     | NULL    |       |
+| param7      | varchar(20) | YES  |     | NULL    |       |
+| devSIM      | varchar(20) | YES  |     | NULL    |       |
+| shortcode   | varchar(20) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+18 rows in set (0.01 sec)
+
