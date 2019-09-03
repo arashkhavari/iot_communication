@@ -8,23 +8,6 @@ from time import localtime , strftime
 import binascii
 from datetime import datetime
 
-'''
-socket baraye kar bar ruye TCP UDP ast
-threading baraye pardazesh movazi mibashad
-socketserver shamel in do mishavad class haye pichide tar
-pymysql.cursors baraye vasl shodan be DB mysql ast
-time ke baraye dastrasi be time server ast
-binascii class format ascii va binary mibashad
-datetime ham noi class manand time mibashad ba function haye bishtar
-
-dar class pain yek thread neveshte shode ast ta socket hamishe dar hale shenidan bar ruye port bashad
-chon dar python listen kardan bar ruye port bar asase tedad data mibashad na zaman
-sepas data bar asase formati ke dayaft mikonim pardazesh mishavad va item ha har kodam
-dara shomare mishavand
-dar inja yadavari mikonam bar asase device t2m tanzim shode
-harkoja ke mikhahid data ra bebinid zire an khat print($VALUE) ra bezanid
-
-'''
 class ClientThread(Thread):
     def __init__(self,ip,port):
         Thread.__init__(self)
@@ -136,10 +119,6 @@ threads = []
 connection = pymysql.connect(host='localhost',user='root',password='!QAZ1qaz1qaz',db='t2m',charset='utf8',cursorclass=pymysql.cursors.DictCursor,autocommit=True)
 _cursor = connection.cursor()
 
-'''
-dar inja address va port mored nazar ra dadeim va miguim protocol TCP ast
-hamchenin username va password DB save shode
-'''
 
 while True:
     tcpsock.listen(4)
@@ -150,6 +129,3 @@ while True:
     threads.append(newthread)
 for t in threads:
     t.join()
-'''
-halqei ke listen kardan data niz injast
-'''

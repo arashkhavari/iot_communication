@@ -3,15 +3,6 @@ import pymysql.cursors
 from socket import *
 import ast
 
-'''
-cursor mysql ezafe shode ke haman pymysql ast
-socket ezafe shode baraye TCP
-ast niz convertor data mibashad
-port listen dar pain avarde shode ast
-socket bind shode data az database gerefte mishavad
-va montazer darkhast az wialon baraye 3way handshake mishavad
-daryaft shavad data ta zamani ke socket bind ast ersal mishavad
-'''
 
 serverPort = 11800
 serverSocket = socket(AF_INET,SOCK_STREAM)
